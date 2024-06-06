@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* ----------------------------------------Header--------------------------------------------*/
+.myheader {
+  grid-area: header;
+}
+.mymenu {
+  grid-area: menu;
+}
+.mymain {
+  grid-area: main;
+}
+.myright {
+  grid-area: right;
+}
+
+.myhorario {grid-area: horario;}
+
+
+.programacion {grid-area: programacion;}
+
+.myfooter {
+  grid-area: footer;
+}
+
+.contenedor-principal {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu horario horario horario horario horario"
+    "menu programacion programacion programacion programacion programacion"
+    "menu footer footer footer footer footer"
+    ;
+}
+
+.contenedor-principal > div {
+  padding: 15px;
+  background-color: rgba(255, 228, 196, 0);
+  font-size: 20px;
+  border: solid rgb(255, 255, 255) 00.001rem;
+  text-align: center;
+}
+
+.contenedor-principal {
+    background-color: white;
+  padding: 25px;
+}
+
+nav,
+.barra-de-navegacion,
+.login-register {
+  display: flex;
+  align-items: baseline;
+}
+
+.barra-de-navegacion,
+.login-register {
+  align-items: center;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+.li1 {
+  margin-right: 15px;
+  border-bottom: solid rgb(255, 170, 0) 5px;
+  
+}
+
+.li1:hover {
+    border-radius: 20%;
+    font-size: 25px;
+background-color:rgb(255, 170, 0);
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.logoimg {
+
+width: 120px;
+
+
+}
+/*-----------------------------menu izquierdo ----------------------------------------------*/
+
+.menu-contenedor {
+  display: flex;
+  flex-direction: column;
+  border: solid red 2px;
+  
+}
+
+.primera-tarjeta {
+    
+  width: auto;
+  margin-top: 100px;
+}
+
+.primera-tarjeta > img {
+  width: 100%;
+}
+
+
+.primera-tarjeta:hover .img1menu{
+    transform: scale(1.2); /* Escala la imagen a 1.2 veces su tamaño original */
+    filter: brightness(1.2); /* Opcional: Añade un poco de brillo para que se vea mejor */
+
+}
+
+.segunda-tarjeta {
+    
+  width: auto;
+  margin-top: 100px;
+}
+
+.segunda-tarjeta > img {
+  width: 100%;
+}
+
+.segunda-tarjeta:hover .img2menu{
+    transform: scale(1.2); /* Escala la imagen a 1.2 veces su tamaño original */
+    filter: brightness(1.2); /* Opcional: Añade un poco de brillo para que se vea mejor */
+
+}
+
+
+
+.tercera-tarjeta {
+    
+    width: auto;
+    margin-top: 100px;
+  }
+  
+  .tercera-tarjeta > img {
+    width: 100%;
+  }
+
+
+  .tercera-tarjeta:hover .img3menu{
+    transform: scale(1.2); /* Escala la imagen a 1.2 veces su tamaño original */
+    filter: brightness(1.2); /* Opcional: Añade un poco de brillo para que se vea mejor */
+
+}
+
+
+
+
+/*  --------------------Main Contenido Principal-------------------------------*/
+
+.imgmain1{
+
+width: 50%;
+box-shadow: 10px 5px 15px grey;
+margin: 20px;
+
+}
+
+
+
+.imgmain2{
+
+    width: 50%;
+    box-shadow: 10px 5px 15px grey;
+    margin: 20px;
+    
+    
+    }
+
+
+
+
+p {
+
+text-align: right;
+text-align: justify;
+
+
+}
+
+
+
+/* ------------------------Horarios--------------------------------*/
+
+.h1horario {
+
+    border-top: solid black 1px;
+
+}
+
+
+
+
+
+.imagen-horario {
+
+
+width: 25%;
+
+
+}
+
+
+/*-----------------------------Programacion------------------------*/
+
+
+.titulo-programacion {
+
+margin: 20px;
+border-top: solid black 1px;
+
+
+
+}
+
+
+.container-programacion {
+
+display: grid;
+grid-template-columns: auto auto;
+margin: 30px;
+
+
+}
+
+
+
+
+.tarjeta-programacion1{
+
+text-align: center;
+align-items: center;
+
+}
+
+.tarjeta-programacion2 > img {
+
+    width: 70%;
+    height: 50%;
+}
+
+
+
+.tarjeta-programacion3{
+
+    text-align: center;
+    align-items: center;
+    
+    }
+    
+    .tarjeta-programacion4 > img {
+    
+        width: 70%;
+        height: 50%;
+    }
+
+
+
+
+    .tarjeta-programacion5{
+
+        text-align: center;
+        align-items: center;
+        
+        }
+        
+        .tarjeta-programacion6 > img {
+        
+        width: 70%;
+        height: 50%;
+        }
+
+
+        .parrafo-programacion {
+
+            text-align: center;
+
+
+        }
